@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+</head>
+
+<body style="font-family: sans-serif;">
+
+  <div>
+    <h1>Kent Joemar L. Escoto | BSCS</h1>
+  </div>
+
+  <div>
+    <input type="text" id="calculatorInput" placeholder="Enter a number">
+  </div>
+
+  <div style="margin-top: 5px;">
+    <button onclick="selectOperator('+')">+</button>
+    <button onclick="selectOperator('-')">-</button>
+    <button onclick="selectOperator('*')">*</button>
+    <button onclick="selectOperator('/')">/</button>
+    <button onclick="clearCalculator()">C</button>
+    <button onclick="calculate()">=</button>
+  </div>
+
+  <div style="color:darkgreen">
+    <h2 id="result">Result: 0</h2>
+  </div>
+
+  <script src="calculator.js"></script>
+
+</body>
+
+</html>
